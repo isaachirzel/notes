@@ -1,0 +1,15 @@
+.Editor {
+	color: black;
+	background-color: white;
+	width: 50em;
+	min-height: 10em;
+	padding: 0.5em;
+
+	&[contenteditable] {
+		outline: 0px solid transparent;
+
+		&:focus {
+			outline: 2px dotted black;
+		}
+	}
+}
