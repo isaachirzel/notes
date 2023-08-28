@@ -1,9 +1,9 @@
-import styles from "./Editor.module.scss";
+import "./Editor.scss";
 
 export default function Editor()
 {
 	return (
-		<div className={styles.Editor} contentEditable={true}>
+		<div className="editor" contentEditable={true}>
 
 		</div>
 	);

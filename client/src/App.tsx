@@ -1,13 +1,15 @@
-import styles from "./App.module.scss";
+import "./App.scss";
 import Editor from "./editor/Editor";
 import Toolbar from "./toolbar/Toolbar";
 
 export default function App() {
+	const editor = <Editor />;
+
 	return (
-		<div className={styles.App}>
-			<div className={styles.center}>
+		<div className="app">
+			<div className="center">
 				<Toolbar />
-				<Editor />
+				{editor}
 			</div>
 		</div>
 	);
